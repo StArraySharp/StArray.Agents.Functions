@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+   
+    <data name="Tool_File_ChangeWorkingDirectory" xml:space="preserve">
+        <value>Change the current working directory</value>
+    </data>
+
+    <!-- FileTools shared -->
+    <data name="Tool_File_FilePath" xml:space="preserve">
+        <value>The file path</value>
+    </data>
+    <data name="Tool_File_DirectoryPath" xml:space="preserve">
+        <value>The directory path</value>
+    </data>
+
+    <!-- MathTools parameters -->
+    <data name="Tool_Math_Add_a" xml:space="preserve">
+        <value>The first integer</value>
+    </data>
+    <data name="Tool_Math_Add_b" xml:space="preserve">
+        <value>The second integer</value>
+    </data>
+    <data name="Tool_Math_Subtract_a" xml:space="preserve">
+        <value>The first integer (minuend)</value>
+    </data>
+    <data name="Tool_Math_Subtract_b" xml:space="preserve">
+        <value>The second integer (subtrahend)</value>
+    </data>
+    <data name="Tool_Math_Multiply_a" xml:space="preserve">
+        <value>The first integer</value>
+    </data>
+    <data name="Tool_Math_Multiply_b" xml:space="preserve">
+        <value>The second integer</value>
+    </data>
+    <data name="Tool_Math_Divide" xml:space="preserve">
+        <value>Divides the first integer by the second integer</value>
+    </data>
+    <data name="Tool_Math_Divide_a" xml:space="preserve">
+        <value>The dividend</value>
+    </data>
+    <data name="Tool_Math_Divide_b" xml:space="preserve">
+        <value>The divisor</value>
+    </data>
+
+    <!-- TextTools parameters -->
+    <data name="Tool_Text_Length_text" xml:space="preserve">
+        <value>The text input</value>
+    </data>
+    <data name="Tool_Text_ToUpper_text" xml:space="preserve">
+        <value>The text input</value>
+    </data>
+    <data name="Tool_Text_ToLower_text" xml:space="preserve">
+        <value>The text input</value>
+    </data>
+    <data name="Tool_Text_Concat_first" xml:space="preserve">
+        <value>The first text</value>
+    </data>
+    <data name="Tool_Text_Concat_second" xml:space="preserve">
+        <value>The second text</value>
+    </data>
+
+    <!-- CodeTools parameters -->
+    <data name="Tool_Code_ValidateJson_json" xml:space="preserve">
+        <value>The JSON string to validate</value>
+    </data>
+    <data name="Tool_Code_CountLines_code" xml:space="preserve">
+        <value>The source code to analyze</value>
+    </data>
+
+    <!-- TimeTools parameters -->
+    <data name="Tool_Time_AddDays_dateString" xml:space="preserve">
+        <value>The date string</value>
+    </data>
+    <data name="Tool_Time_AddDays_days" xml:space="preserve">
+        <value>The number of days to add</value>
+    </data>
+
+    <!-- ShellTools parameters -->
+    <data name="Tool_Shell_Execute_command" xml:space="preserve">
+        <value>The command to execute</value>
+    </data>
+    <data name="Tool_Shell_Execute_shell" xml:space="preserve">
+        <value>Shell type (cmd, bash, powershell, sh)</value>
+    </data>
+    <data name="Tool_Shell_Execute_workingDir" xml:space="preserve">
+        <value>Working directory (optional)</value>
+    </data>
+    <data name="Tool_Shell_Execute_timeout" xml:space="preserve">
+        <value>Timeout in milliseconds</value>
+    </data>
+    <data name="Tool_Shell_GetEnv_name" xml:space="preserve">
+        <value>Environment variable name</value>
+    </data>
+    <data name="Tool_Shell_SetEnv_name" xml:space="preserve">
+        <value>Environment variable name</value>
+    </data>
+    <data name="Tool_Shell_SetEnv_value" xml:space="preserve">
+        <value>Environment variable value</value>
+    </data>
+
+    <!-- FileTools parameters -->
+    <data name="Tool_File_Exists_path" xml:space="preserve">
+        <value>The file path</value>
+    </data>
+    <data name="Tool_File_ListFiles_recursive" xml:space="preserve">
+        <value>Whether to search subdirectories recursively</value>
+    </data>
+    <data name="Tool_File_ReadAllText_path" xml:space="preserve">
+        <value>The file path</value>
+    </data>
+    <data name="Tool_File_WriteAllText_path" xml:space="preserve">
+        <value>The file path</value>
+    </data>
+    <data name="Tool_File_WriteAllText_content" xml:space="preserve">
+        <value>The content to write</value>
+    </data>
+    <data name="Tool_FileTools_ReadFileContent_path" xml:space="preserve">
+        <value>The file path</value>
+    </data>
+    <data name="Tool_FileTools_ReadFileContent_startLine" xml:space="preserve">
+        <value>The starting line number</value>
+    </data>
+    <data name="Tool_FileTools_ReadFileContent_rangeLines" xml:space="preserve">
+        <value>The number of lines to read</value>
+    </data>
+    <data name="Tool_File_ReplaceStringInFile_oldValue" xml:space="preserve">
+        <value>The old string to replace</value>
+    </data>
+    <data name="Tool_File_ReplaceStringInFile_newValue" xml:space="preserve">
+        <value>The new string to replace with</value>
+    </data>
+    <data name="Tool_File_ReplaceStringInFile_isRegex" xml:space="preserve">
+        <value>Whether to use regular expression</value>
+    </data>
+    <data name="Tool_File_Delete_path" xml:space="preserve">
+        <value>The path of the file to delete</value>
+    </data>
+    <data name="Tool_File_SearchContentInFiles_paths" xml:space="preserve">
+        <value>The file paths to search</value>
+    </data>
+    <data name="Tool_File_SearchContentInFiles_content" xml:space="preserve">
+        <value>The content to search for</value>
+    </data>
+    <data name="Tool_File_SearchContentInFiles_isRegex" xml:space="preserve">
+        <value>Whether to use regular expression</value>
+    </data>
+
+    <!-- WebTools -->
+    <data name="Tool_Web_WebFetch" xml:space="preserve">
+        <value>Fetch web page content</value>
+    </data>
+    <data name="Tool_Web_BingSearch" xml:space="preserve">
+        <value>Search using Bing search engine</value>
+    </data>
+
+    <!-- WebTools parameters -->
+    <data name="Tool_Web_WebFetch_url" xml:space="preserve">
+        <value>The URL to fetch</value>
+    </data>
+    <data name="Tool_Web_WebFetch_headers" xml:space="preserve">
+        <value>Custom request headers (optional)</value>
+    </data>
+    <data name="Tool_Web_BingSearch_query" xml:space="preserve">
+        <value>The search query</value>
+    </data>
+
+    <!-- WebTools: DuckDuckGo -->
+    <data name="Tool_Web_DuckDuckGoLite" xml:space="preserve">
+        <value>Search using DuckDuckGo Lite search engine</value>
+    </data>
+    <data name="Tool_Web_DuckDuckGoLite_query" xml:space="preserve">
+        <value>The search query</value>
+    </data>
+
+    <!-- Win32 Tools: WindowTools -->
+    <data name="Tool_Win32_GetWindowTitle" xml:space="preserve">
+        <value>Get window title (Win32)</value>
+    </data>
+    <data name="Tool_Win32_GetWindowTitle_hwnd" xml:space="preserve">
+        <value>The window handle</value>
+    </data>
+
+    <!-- Common messages -->
+    <data name="Platform_NotSupported" xml:space="preserve">
+        <value>This tool is not supported on: {0}</value>
+    </data>
+</root>

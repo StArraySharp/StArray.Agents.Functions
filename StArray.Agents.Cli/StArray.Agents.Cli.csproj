@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\StArray.Agents.Functions\StArray.Agents.Functions.csproj" />
+        <ProjectReference Include="..\StArray.Agents\StArray.Agents.csproj" />
     </ItemGroup>
 
 </Project>

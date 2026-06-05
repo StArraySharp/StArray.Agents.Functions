@@ -4,7 +4,7 @@ using System.Text.Json;
 using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 using OpenAI;
-using StArray.Agents.Functions.Core;
+using StArray.Agents.Core;
 
 namespace StArray.Agents.Cli;
 

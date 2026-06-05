@@ -1,23 +1,23 @@
-# StArray.Agents.Functions
+# StArray.Agents
 
 .NET Agent 工具函数库，基于 Microsoft Agent Framework (MAF)。
 
 ## 项目结构
 
 ```
-StArray.Agents.Functions/
-  StArray.Agents.Functions/           -- 主项目
-    Annotations/                     -- AgentToolAttribute, ToolParameterAttribute, NotToolAttribute
-    Core/                            -- FunctionFactory, ToolResult<T>
+StArray.Agents/
+  StArray.Agents/                     -- 主项目
+    Annotations/                     -- AgentToolAttribute, ToolParameterAttribute
+    Core/                            -- FunctionFactory, ToolResponse<T>
     Tools/                           -- 工具实现 (MathTools, FileTools, TimeTools, TextTools, CodeTools)
       Win32/                         -- WindowTools
     Resources/                       -- 本地化 (.resx)
-  StArray.Agents.Functions.Diagnostics/  -- 诊断项目
+  StArray.Agents.Diagnostics/        -- 诊断项目
     FunctionFactoryGenerator         -- 源生成器：扫描 partial ITools 类，自动生成 GetTools()
-    AgentToolParameterAnalyzer       -- 分析器：SAF0001 / SAF0002 诊断
+    AgentToolParameterAnalyzer       -- 分析器：SAF0001 / SAF0002 / SAF0003 诊断
     AgentToolParameterCodeFixProvider -- CodeFix：自动添加/移除特性
     Resources/                       -- 分析器本地化
-  StArray.Agents.Functions.Tests/     -- 测试项目
+  StArray.Agents.Tests/              -- 测试项目
 ```
 
 ## 快速开始
@@ -27,10 +27,10 @@ StArray.Agents.Functions/
 public partial class MyTools : ITools
 {
     [AgentTool("Tool_My_DoSomething")]
-    public ToolResult<string> DoSomething(
+    public ToolResponse<string> DoSomething(
         [ToolParameter("Tool_My_DoSomething_input")] string input)
     {
-        return ToolResult<string>.Success(input.ToUpper());
+        return ToolResponse<string>.Success(input.ToUpper());
     }
 }
 
@@ -102,16 +102,17 @@ FunctionFactory.ClearCustomTools();
 - 类必须为 `partial class` 并实现 `ITools`
 - 方法标记 `[AgentTool("Tool_XXX_YYY")]` ，键名格式 `Tool_{类名}_{方法名}`
 - 每个参数标记 `[ToolParameter("Tool_XXX_YYY_paramName")]` ，键名格式 `{AgentTool键}_{参数名}`
-- 返回类型使用 `ToolResult<T>` 统一包装成功/失败
+- 返回类型使用 `ToolResponse<T>` 统一包装成功/失败
 
 ## 分析器诊断
 
-| ID | 描述 |
-|----|------|
-| SAF0001 | [AgentTool] 方法参数缺少 [ToolParameter] |
-| SAF0002 | 非 [AgentTool] 方法的参数误用 [ToolParameter] |
+| ID | 描述 | CodeFix |
+|----|------|---------|
+| SAF0001 | [AgentTool] 方法参数缺少 [ToolParameter] | ✅ |
+| SAF0002 | 非 [AgentTool] 方法的参数误用 [ToolParameter] | ✅ |
+| SAF0003 | 本地化键在资源文件中不存在（isLocalize=true） | ❌ |
 
-两种警告均提供 CodeFix（Alt+Enter）一键修复。
+SAF0001 和 SAF0002 提供 CodeFix（Alt+Enter）一键修复。
 
 ## 本地化
 

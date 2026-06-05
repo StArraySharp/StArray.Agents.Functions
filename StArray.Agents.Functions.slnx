@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="StArray.Agents.Cli/StArray.Agents.Cli.csproj" />
-  <Project Path="StArray.Agents.Functions.Diagnostics/StArray.Agents.Functions.Diagnostics.csproj" />
-  <Project Path="StArray.Agents.Functions.Tests/StArray.Agents.Functions.Tests.csproj" />
-  <Project Path="StArray.Agents.Functions/StArray.Agents.Functions.csproj" />
-</Solution>

@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <PackageId>StArray.Agents</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>StArray</Authors>
+        <Description>Agent tool function library with source-generated AIFunction registration and Roslyn analyzers.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Agents.AI.Abstractions" Version="1.6.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\StArray.Agents.Diagnostics\StArray.Agents.Diagnostics.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+
+    <!-- 将 Diagnostics 分析器 DLL 打包到 NuGet 的 analyzers/ 目录 -->
+    <ItemGroup>
+        <None Include="..\StArray.Agents.Diagnostics\bin\$(Configuration)\netstandard2.0\StArray.Agents.Diagnostics.dll"
+              Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\Localization.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources\Localization.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources\Localization.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <!-- 将 .resx 注册为 AdditionalFile，供诊断分析器 SAF0003 扫描本地化键 -->
+    <!-- Register .resx as AdditionalFile so the analyzer SAF0003 can scan localization keys -->
+    <ItemGroup>
+        <AdditionalFiles Include="Resources\Localization.resx" />
+        <AdditionalFiles Include="Resources\Localization.en.resx" />
+    </ItemGroup>
+
+</Project>

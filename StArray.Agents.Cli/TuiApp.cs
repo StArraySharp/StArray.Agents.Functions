@@ -6,7 +6,7 @@ using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 using OpenAI;
 using OpenAI.Chat;
-using StArray.Agents.Functions.Core;
+using StArray.Agents.Core;
 using ChatMessage = OpenAI.Chat.ChatMessage;
 using MEAI = Microsoft.Extensions.AI;
 

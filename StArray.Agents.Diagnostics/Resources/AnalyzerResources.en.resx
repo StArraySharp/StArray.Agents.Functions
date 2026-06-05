@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- SAF0001: Missing [ToolParameter] on [AgentTool] method -->
+  <data name="SAF0001_Title" xml:space="preserve">
+    <value>[AgentTool] method parameter missing [ToolParameter]</value>
+  </data>
+  <data name="SAF0001_MessageFormat" xml:space="preserve">
+    <value>Parameter '{0}' (method '{1}') is missing [ToolParameter] attribute; the Agent cannot obtain parameter description</value>
+  </data>
+  <data name="SAF0001_Description" xml:space="preserve">
+    <value>All parameters of methods marked [AgentTool] should have [ToolParameter] attribute so the Agent knows each parameter's purpose.</value>
+  </data>
+
+  <!-- SAF0002: Orphan [ToolParameter] on non-[AgentTool] method -->
+  <data name="SAF0002_Title" xml:space="preserve">
+    <value>Non-Agent method parameter should not use [ToolParameter]</value>
+  </data>
+  <data name="SAF0002_MessageFormat" xml:space="preserve">
+    <value>Parameter '{0}' (method '{1}') has [ToolParameter] but the method is not marked [AgentTool]; the attribute is ineffective</value>
+  </data>
+  <data name="SAF0002_Description" xml:space="preserve">
+    <value>[ToolParameter] is only effective on methods marked [AgentTool]; remove it from non-Agent methods.</value>
+  </data>
+
+  <!-- SAF0003: Missing localization key for [AgentTool] or [ToolParameter] -->
+  <data name="SAF0003_Title" xml:space="preserve">
+    <value>Localization key not found in resource file</value>
+  </data>
+  <data name="SAF0003_MessageFormat" xml:space="preserve">
+    <value>{2} '{0}' localization key '{1}' not found in '{3}' (isLocalize=true)</value>
+  </data>
+  <data name="SAF0003_Description" xml:space="preserve">
+    <value>When [AgentTool]/[ToolParameter] specifies isLocalize=true, the localization key must exist in the project's Localization.resx file.</value>
+  </data>
+  <data name="CodeFix_AddToolParameter" xml:space="preserve">
+    <value>Add [ToolParameter] attribute</value>
+  </data>
+  <data name="CodeFix_RemoveToolParameter" xml:space="preserve">
+    <value>Remove [ToolParameter] attribute</value>
+  </data>
+  <data name="CodeFix_AddAgentTool" xml:space="preserve">
+    <value>Add [AgentTool] attribute to method</value>
+  </data>
+</root>

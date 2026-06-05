@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Tool_Math_Add" xml:space="preserve">
+        <value>两个整数相加</value>
+    </data>
+    <data name="Tool_Math_Subtract" xml:space="preserve">
+        <value>第一个整数减去第二个整数</value>
+    </data>
+    <data name="Tool_Math_Multiply" xml:space="preserve">
+        <value>两个整数相乘</value>
+    </data>
+    <data name="Tool_Text_Length" xml:space="preserve">
+        <value>获取文本字符串的长度</value>
+    </data>
+    <data name="Tool_Text_ToUpper" xml:space="preserve">
+        <value>将文本转换为大写</value>
+    </data>
+    <data name="Tool_Text_ToLower" xml:space="preserve">
+        <value>将文本转换为小写</value>
+    </data>
+    <data name="Tool_Text_Concat" xml:space="preserve">
+        <value>拼接两个文本字符串</value>
+    </data>
+    <data name="Tool_Code_ValidateJson" xml:space="preserve">
+        <value>验证 JSON 字符串</value>
+    </data>
+    <data name="Tool_Code_CountLines" xml:space="preserve">
+        <value>统计源代码行数</value>
+    </data>
+    <data name="Tool_File_Exists" xml:space="preserve">
+        <value>检查指定路径的文件是否存在</value>
+    </data>
+    <data name="Tool_File_ReadAllText" xml:space="preserve">
+        <value>读取文件全部文本</value>
+    </data>
+    <data name="Tool_File_WriteAllText" xml:space="preserve">
+        <value>将文本内容写入文件</value>
+    </data>
+    <data name="Tool_Time_Now" xml:space="preserve">
+        <value>获取当前本地时间</value>
+    </data>
+    <data name="Tool_Time_UtcNow" xml:space="preserve">
+        <value>获取当前 UTC 时间</value>
+    </data>
+    <data name="Tool_Time_AddDays" xml:space="preserve">
+        <value>给日期增加指定天数</value>
+    </data>
+    <data name="Tool_Shell_Execute" xml:space="preserve">
+        <value>执行 Shell 命令</value>
+    </data>
+    <data name="Tool_Shell_GetEnv" xml:space="preserve">
+        <value>获取环境变量值</value>
+    </data>
+    <data name="Tool_Shell_SetEnv" xml:space="preserve">
+        <value>设置环境变量</value>
+    </data>
+    <data name="Tool_FileTools_ReadFileContent" xml:space="preserve">
+        <value>读取文件指定行范围的内容</value>
+    </data>
+    <data name="Tool_File_GetCurrentDirectory" xml:space="preserve">
+        <value>获取当前工作目录路径</value>
+    </data>
+    <data name="Tool_File_ChangeWorkingDirectory" xml:space="preserve">
+        <value>更改当前工作目录</value>
+    </data>
+
+    <!-- MathTools parameters -->
+    <data name="Tool_Math_Add_a" xml:space="preserve">
+        <value>第一个整数</value>
+    </data>
+    <data name="Tool_Math_Add_b" xml:space="preserve">
+        <value>第二个整数</value>
+    </data>
+    <data name="Tool_Math_Subtract_a" xml:space="preserve">
+        <value>第一个整数（被减数）</value>
+    </data>
+    <data name="Tool_Math_Subtract_b" xml:space="preserve">
+        <value>第二个整数（减数）</value>
+    </data>
+    <data name="Tool_Math_Multiply_a" xml:space="preserve">
+        <value>第一个整数</value>
+    </data>
+    <data name="Tool_Math_Multiply_b" xml:space="preserve">
+        <value>第二个整数</value>
+    </data>
+    <data name="Tool_Math_Divide" xml:space="preserve">
+        <value>第一个整数除以第二个整数</value>
+    </data>
+    <data name="Tool_Math_Divide_a" xml:space="preserve">
+        <value>被除数</value>
+    </data>
+    <data name="Tool_Math_Divide_b" xml:space="preserve">
+        <value>除数</value>
+    </data>
+
+    <!-- TextTools parameters -->
+    <data name="Tool_Text_Length_text" xml:space="preserve">
+        <value>文本输入</value>
+    </data>
+    <data name="Tool_Text_ToUpper_text" xml:space="preserve">
+        <value>文本输入</value>
+    </data>
+    <data name="Tool_Text_ToLower_text" xml:space="preserve">
+        <value>文本输入</value>
+    </data>
+    <data name="Tool_Text_Concat_first" xml:space="preserve">
+        <value>第一个文本</value>
+    </data>
+    <data name="Tool_Text_Concat_second" xml:space="preserve">
+        <value>第二个文本</value>
+    </data>
+
+    <!-- CodeTools parameters -->
+    <data name="Tool_Code_ValidateJson_json" xml:space="preserve">
+        <value>待验证的 JSON 字符串</value>
+    </data>
+    <data name="Tool_Code_CountLines_code" xml:space="preserve">
+        <value>待分析的源代码</value>
+    </data>
+
+    <!-- TimeTools parameters -->
+    <data name="Tool_Time_AddDays_dateString" xml:space="preserve">
+        <value>日期字符串</value>
+    </data>
+    <data name="Tool_Time_AddDays_days" xml:space="preserve">
+        <value>要增加的天数</value>
+    </data>
+
+    <!-- ShellTools parameters -->
+    <data name="Tool_Shell_Execute_command" xml:space="preserve">
+        <value>要执行的命令</value>
+    </data>
+    <data name="Tool_Shell_Execute_shell" xml:space="preserve">
+        <value>Shell 类型（cmd、bash、powershell、sh）</value>
+    </data>
+    <data name="Tool_Shell_Execute_workingDir" xml:space="preserve">
+        <value>工作目录（可选）</value>
+    </data>
+    <data name="Tool_Shell_Execute_timeout" xml:space="preserve">
+        <value>超时时间（毫秒）</value>
+    </data>
+    <data name="Tool_Shell_GetEnv_name" xml:space="preserve">
+        <value>环境变量名</value>
+    </data>
+    <data name="Tool_Shell_SetEnv_name" xml:space="preserve">
+        <value>环境变量名</value>
+    </data>
+    <data name="Tool_Shell_SetEnv_value" xml:space="preserve">
+        <value>环境变量值</value>
+    </data>
+
+    <!-- FileTools shared -->
+    <data name="Tool_File_FilePath" xml:space="preserve">
+        <value>文件路径</value>
+    </data>
+    <data name="Tool_File_DirectoryPath" xml:space="preserve">
+        <value>目录路径</value>
+    </data>
+
+    <!-- FileTools methods -->
+    <data name="Tool_File_ListFiles" xml:space="preserve">
+        <value>列出目录中的文件</value>
+    </data>
+    <data name="Tool_File_Delete" xml:space="preserve">
+        <value>删除指定文件</value>
+    </data>
+    <data name="Tool_File_SearchContentInFiles" xml:space="preserve">
+        <value>在文件中搜索内容</value>
+    </data>
+    <data name="Tool_File_ReplaceStringInFile" xml:space="preserve">
+        <value>替换文件中的字符串</value>
+    </data>
+
+    <!-- FileTools parameters -->
+    <data name="Tool_File_Exists_path" xml:space="preserve">
+        <value>文件路径</value>
+    </data>
+    <data name="Tool_File_ListFiles_recursive" xml:space="preserve">
+        <value>是否递归搜索子目录</value>
+    </data>
+    <data name="Tool_File_ReadAllText_path" xml:space="preserve">
+        <value>文件路径</value>
+    </data>
+    <data name="Tool_File_WriteAllText_path" xml:space="preserve">
+        <value>文件路径</value>
+    </data>
+    <data name="Tool_File_WriteAllText_content" xml:space="preserve">
+        <value>要写入的内容</value>
+    </data>
+    <data name="Tool_FileTools_ReadFileContent_path" xml:space="preserve">
+        <value>文件路径</value>
+    </data>
+    <data name="Tool_FileTools_ReadFileContent_startLine" xml:space="preserve">
+        <value>起始行号</value>
+    </data>
+    <data name="Tool_FileTools_ReadFileContent_rangeLines" xml:space="preserve">
+        <value>读取行数</value>
+    </data>
+    <data name="Tool_File_ReplaceStringInFile_oldValue" xml:space="preserve">
+        <value>要替换的旧字符串</value>
+    </data>
+    <data name="Tool_File_ReplaceStringInFile_newValue" xml:space="preserve">
+        <value>替换后的新字符串</value>
+    </data>
+    <data name="Tool_File_ReplaceStringInFile_isRegex" xml:space="preserve">
+        <value>是否使用正则表达式</value>
+    </data>
+    <data name="Tool_File_Delete_path" xml:space="preserve">
+        <value>要删除的文件路径</value>
+    </data>
+    <data name="Tool_File_SearchContentInFiles_paths" xml:space="preserve">
+        <value>要搜索的文件路径数组</value>
+    </data>
+    <data name="Tool_File_SearchContentInFiles_content" xml:space="preserve">
+        <value>要搜索的内容</value>
+    </data>
+    <data name="Tool_File_SearchContentInFiles_isRegex" xml:space="preserve">
+        <value>是否使用正则表达式</value>
+    </data>
+
+    <!-- WebTools -->
+    <data name="Tool_Web_WebFetch" xml:space="preserve">
+        <value>获取网页内容</value>
+    </data>
+    <data name="Tool_Web_BingSearch" xml:space="preserve">
+        <value>使用 Bing 搜索引擎搜索</value>
+    </data>
+
+    <!-- WebTools parameters -->
+    <data name="Tool_Web_WebFetch_url" xml:space="preserve">
+        <value>要获取的 URL</value>
+    </data>
+    <data name="Tool_Web_WebFetch_headers" xml:space="preserve">
+        <value>自定义请求头（可选）</value>
+    </data>
+    <data name="Tool_Web_BingSearch_query" xml:space="preserve">
+        <value>搜索查询</value>
+    </data>
+
+    <!-- WebTools: DuckDuckGo -->
+    <data name="Tool_Web_DuckDuckGoLite" xml:space="preserve">
+        <value>使用 DuckDuckGo Lite 搜索引擎搜索</value>
+    </data>
+    <data name="Tool_Web_DuckDuckGoLite_query" xml:space="preserve">
+        <value>搜索查询</value>
+    </data>
+
+    <!-- Win32 Tools: WindowTools -->
+    <data name="Tool_Win32_GetWindowTitle" xml:space="preserve">
+        <value>获取窗口标题 (Win32)</value>
+    </data>
+    <data name="Tool_Win32_GetWindowTitle_hwnd" xml:space="preserve">
+        <value>窗口句柄</value>
+    </data>
+
+    <!-- 通用消息 -->
+    <data name="Platform_NotSupported" xml:space="preserve">
+        <value>此工具不支持当前平台：{0}</value>
+    </data>
+</root>
